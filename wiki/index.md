@@ -9,9 +9,9 @@ tags:
   - "#LLM-Wiki"
 last_updated: 2026-04-26
 maintainer: 自维护（LLM 每次 ingest 后更新）
-total_pages: 8
-total_companies: 1
-total_concepts: 0
+total_pages: 16
+total_companies: 2
+total_concepts: 7
 total_clippings: 1
 related:
   - "[[Templates/Company-Analysis-Playbook]]"
@@ -124,6 +124,7 @@ hang_docs/
 | 公司 | 行业 | Ticker | 评级 | 上次更新 |
 |---|---|---|---|---|
 | [[META\|Meta Platforms]] | [[Digital Advertising]] / [[AI Infrastructure]] | [[META]] | Buy on Dip | 2026-04-26 |
+| [[TCOM\|Trip.com Group]] | [[Online Travel]] / [[China Consumer]] | [[TCOM]] | Buy on Dip | 2026-04-26 |
 
 ```dataview
 TABLE WITHOUT ID
@@ -136,25 +137,38 @@ WHERE type = "Company"
 SORT last_updated DESC
 ```
 
-**Watchlist（待补全）**：[[TCOM]]（携程） · [[GOOGL]] · [[AAPL]] · [[NVDA]] · [[TSLA]] · [[AMZN]] · [[MSFT]] · [[Pinduoduo]] · [[BABA]] · [[BIDU]]
+**Watchlist（待补全）**：[[GOOGL]] · [[AAPL]] · [[NVDA]] · [[TSLA]] · [[AMZN]] · [[MSFT]] · [[Pinduoduo]] · [[BABA]] · [[BIDU]] · [[Booking Holdings\|BKNG]] · [[Tongcheng Travel\|0780.HK]] · [[Meituan\|3690.HK]]
 
 ---
 
 ### 💡 Concepts · 概念与指标
 > 财务、估值、技术、商业模式相关的可复用概念页
 
-**财务指标**（待建）：
-- [[ROE]] · [[ROIC]] · [[NOPAT]] · [[Owner Earnings]] · [[Free Cash Flow]] · [[Tangible Net Worth]]
-- [[毛利率]] · [[流动比率]] · [[杜邦分析]] · [[CAGR]]
+**📊 财务指标**（已建 · 7 个核心 Concept · 2026-04-26）：
 
-**估值方法**（待建）：
+| 概念 | 类别 | 公式 / 一句话 | 重点案例 |
+|---|---|---|---|
+| [[ROIC]] | Financial | NOPAT / Invested Capital · 双口径必算 | [[META]] 33% · [[TCOM]] 11% |
+| [[Owner Earnings]] | Financial | OCF - Maintenance CapEx · Buffett 1986 | [[META]] / [[TCOM]] 双向校准 |
+| [[Wide Moat]] | Business-Model | 5 大护城河来源 · Pat Dorsey | [[META]] 🟢 · [[TCOM]] 🟡 |
+| [[Tangible Net Worth]] | Financial | 股东权益 - 商誉 - 无形资产 | 总负债/TNW 红线 |
+| [[CapEx]] | Financial | Maintenance + Growth · AI Hyperscaler 周期 | [[META]] 三年 2.6x |
+| [[流动比率]] | Financial | 流动资产 / 流动负债 · 短期偿债 | 阈值 > 1.0 |
+| [[应收应付比]] | Financial | AR / AP · Pricing Power 间接证据 | [[TCOM]] 0.30x ⭐⭐⭐ |
+
+**📈 估值方法**（待建）：
 - [[DCF]] · [[PE]] · [[PS]] · [[PB]] · [[PEG]] · [[EV/EBITDA]] · [[Sum-of-the-Parts]]
 
-**商业模式**（待建）：
-- [[Network Effects]] · [[Wide Moat]] · [[Pricing Power]] · [[Smiling Curve]] · [[Two-Sided Network]] · [[Platform Economics]]
+**🏗️ 商业模式**（待建）：
+- [[Network Effects]] · [[Pricing Power]] · [[Switching Cost]] · [[Brand Power]] · [[Scale Economics]] · [[Efficient Scale]]
+- [[Smiling Curve]] · [[Two-Sided Network]] · [[Platform Economics]]
 - [[Take Rate]] · [[CAC]] · [[LTV]] · [[ARPU]] · [[Churn Rate]]
 
-**AI 基础设施**（待建）：
+**🔍 财务质量**（待建）：
+- [[NOPAT]] · [[FCF]] · [[ROE]] · [[杜邦分析]] · [[毛利率]] · [[Earnings Quality]] · [[Cash Conversion Cycle]]
+- [[Maintenance CapEx]] · [[Working Capital]] · [[Quick Ratio]] · [[DSO]] · [[DPO]]
+
+**🤖 AI 基础设施**（待建）：
 - [[AI Infrastructure]] · [[Hyperscaler]] · [[CapEx Cycle]] · [[GPU]] · [[HBM]] · [[Foundation Model]]
 
 ```dataview
@@ -322,9 +336,9 @@ SORT length(rows) DESC
 
 | 维度 | 数值 | 目标 |
 |---|---|---|
-| 总页数 | 8（含治理层） | 100+ |
-| 公司分析 | 1 ([[META]]) | 20-30 |
-| 概念页 | 0 | 50+ |
+| 总页数 | 16（含治理层） | 100+ |
+| 公司分析 | 2 ([[META]] · [[TCOM]]) | 20-30 |
+| 概念页 | 7（[[ROIC]] · [[Owner Earnings]] · [[Wide Moat]] · [[Tangible Net Worth]] · [[CapEx]] · [[流动比率]] · [[应收应付比]]）| 50+ |
 | 网页剪藏 | 1 | 持续 |
 | 治理 / 元 | 5（[[purpose]] / [[schema]] / [[index]] / [[log]] / [[overview]]） | 5（已齐）|
 | [[Orphan Page]] 数 | 待 [[Lint]] | < 5% |

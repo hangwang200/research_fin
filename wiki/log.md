@@ -41,14 +41,85 @@ aliases:
 
 | 维度 | 数值 |
 |---|---|
-| 总条目数 | 7 |
-| Setup 条目 | 6 |
-| Ingest 条目 | 1 |
+| 总条目数 | 9 |
+| Setup 条目 | 7 |
+| Ingest 条目 | 2 |
 | 距上次活动 | 0 天 |
 
 ---
 
 ## 🗂️ Activity Log（倒序，最新在上）
+
+## [2026-04-26] setup | wiki/concepts/ × 7 | 核心 Concept 页批量建立
+- **Trigger**：用户指令「建核心 Concepts [[ROIC]] / [[Owner Earnings 真实净现金流]] / [[Wide Moat]] / [[有形资产净值]] / [[CapEx]] / [[流动比例]] / [[应收/应付比]]」
+- **Output**：7 个 Concept 页，全部位于 `wiki/concepts/`
+    - [[ROIC]] (`ROIC.md`, 122 行) — 双口径（NOPAT vs OCF）+ Damodaran/Mauboussin 文献 + 跨公司红线
+    - [[Owner Earnings]] (`Owner Earnings.md`, 148 行) — Buffett 1986 框架 + META/TCOM 双向校准案例
+    - [[Wide Moat]] (`Wide Moat.md`, 144 行) — Pat Dorsey 5 大护城河 + 7 Powers 扩展 + Moat Erosion 警告
+    - [[Tangible Net Worth]] (`Tangible Net Worth.md`, 137 行) — Graham 安全边际 + 总负债/TNW 红线
+    - [[CapEx]] (`CapEx.md`, 159 行) — Maintenance vs Growth + AI Hyperscaler 周期（4 大 Hyperscaler FY2026 合计 ~$500B）
+    - [[流动比率]] (`流动比率.md`, 147 行 · 别名：流动比例 / Current Ratio) — 行业差异化阈值 + Window Dressing 警告
+    - [[应收应付比]] (`应收应付比.md`, 177 行 · 别名：AR/AP Ratio / 应收/应付比) — Pricing Power 间接证据 + Schilit 造假信号 + TCOM 0.30x 极致案例
+- **Methodology Anchors**（每页都包含）：
+    - YAML frontmatter（type: Concept · category · formula · aliases · related）
+    - 公式定义 + 计算口径
+    - [[Templates/Company-Analysis-Playbook]] §3 红线锚定
+    - 跨公司案例（[[META]] FY2025 + [[TCOM]] FY2024-FY2025 实测数据）
+    - 经典文献引用（Buffett / Graham / Munger / Dorsey / Damodaran / Mauboussin / Greenwald / Helmer / Schilit）
+    - 实战陷阱（Window Dressing / 一次性损益 / VIE / Operating Lease 等）
+- **Cross-Reference 密度**：~580 个 [[WikiLink]]（含红链），平均 83 条/页
+- **Status**：✅
+- **Pages Touched**：10（7 个新建 + [[wiki/index.md]] + [[wiki/log.md]] + [[wiki/overview.md]]）
+- **Index 更新**：
+    - `total_pages: 9 → 16` · `total_concepts: 0 → 7`
+    - 「💡 Concepts」章节从「待建」升级为表格化清单
+    - Health Stats 同步
+- **Living Thesis 影响**：所有 7 个概念页都强化了 [[purpose.md]] §4 [[投资三大主题]]：
+    - 🟢 [[ROIC]] / [[Wide Moat]] / [[Owner Earnings]] → 直接服务于 [[Quality Investing]] 主题
+    - 🟢 [[CapEx]] → 直接服务于 [[AI Infrastructure]] 主题（详细 Hyperscaler 周期分析）
+    - 🟢 [[Tangible Net Worth]] / [[流动比率]] / [[应收应付比]] → 服务于 [[Risk Management]] 子框架
+- **Knowledge Gap 推进**：[[wiki/overview.md]] 中「待建概念页」第一优先级清单 7 项全部完成
+- **Next Concepts Pipeline**（按优先级）：
+    1. [[Network Effects]] / [[Switching Cost]] / [[Pricing Power]]（[[Wide Moat]] 5 大来源的细分）
+    2. [[FCF]] / [[NOPAT]] / [[杜邦分析]]（[[ROIC]] / [[Owner Earnings]] 的依赖）
+    3. [[DCF]] / [[PEG]] / [[EV/EBITDA]]（估值方法集）
+    4. [[Maintenance CapEx]] / [[Greenwald Maintenance CapEx Formula]]（[[CapEx]] 深化）
+
+---
+
+## [2026-04-26] ingest | TCOM | 携程 2025 全年财报 + Q4 2025 + SAMR 反垄断调查
+- **Source**（详见 [[TCOM]] §9 引用文献）：
+    - [[Trip.com Group 6-K]] FY2025 Q4 + Full Year Press Release (filed 2026-02-25)
+    - [[SEC EX-99.1]] FY2025 Q4 数据表
+    - [[Trip.com Group 20-F FY2024]] (filed 2025-04)
+    - [[Trip.com Group]] H1 2025 + $5B Buyback 授权 (2025-08)
+    - [[Tiger Brokers]] / [[BoCom Int'l]] 行业份额估算
+    - [[Mordor Intelligence]] 《China Online Travel Market 2025-2031》
+    - [[Sohu]] / [[行业研究]] 2025 中国 OTA 报告
+    - [[Yahoo Finance]] / [[StockAnalysis]] / [[ValueInvesting.io]] 估值快照
+    - [[China Daily]] / [[SCMP]] / [[Trivium China]] [[SAMR]] 调查报道
+    - [[White Sky Hospitality]] OTA 佣金率对比
+- **Output**：[[TCOM]]（`wiki/entities/companies/TCOM.md` · ~280 行 · 9 个一级章节 · 12 个引用脚注）
+- **Key Findings**：
+    - **会计幻觉警报**：FY2025 GAAP NI RMB 33.4B (+95% YoY) 中 RMB 19.9B 是一次性投资公允价值变动；**核心经营净利润 ≈ RMB 16B (-12% YoY)**
+    - **垄断地位**：[[Trip.com Alliance]]（Ctrip+Qunar+Tongcheng）= 70% 中国 OTA GMV；TCOM 单家 56%；出境游 48.3%
+    - **现金堡垒**：净类现金 RMB 85.7B / ~$12.3B（占市值 38%）；新 $5B 多年期 [[Buyback]] 授权（占市值 ~15%）
+    - **国际化提速**：FY2025 国际 [[OTA]] [[Bookings]] +60% YoY；服务 [[Inbound Travelers]] ~2,000 万；国际收入占比 ~40%
+    - **估值低分位**：Forward PE 12-14x（5Y < 25 分位）/ EV/EBITDA 4.69-13x / PB 1.32x（< 10 分位）
+    - **核心风险**：[[SAMR]] 反垄断调查 (2026-01-14) 涉及 [[最低价]] / [[二选一]] / [[算法控价] / [[商家强制独家]]；潜在罚款 ≤10% 营收 ≈ RMB 5.3B 上限
+    - **治理变动**：[[Min Fan]] / [[Qi Ji]] 共同创始人 2026-02-25 退出董事会；[[James Liang]] 持续掌舵
+    - **决策**：Buy on Dip / Hold（核心仓 3-5%）；Base [[DCF]] 内在价值 $58-71 vs 现价 $48-49 (+20-47% 上行)
+- **Status**：✅
+- **Pages Touched**：1（[[TCOM]]）
+- **Red Lines Triggered**：
+    - 总负债/TNW 86% > 50% ⚠（主要为 [[递延收入]] / [[预收账款]]，非真实债务）
+    - GAAP OCF/NI 0.66x ⚠（穿透到核心 NI 后回到 1.4x ✅）
+    - S&M 同比 +25% > 营收 +17% ⚠（国际扩张期可接受，需观察是否常态化）
+- **Living Thesis 验证**：🟢 [[中国消费 / 旅游业被错杀]]（[[purpose.md]] §4 Thesis #2）从 🔴 升级 → 🟡 partial（仅 1 例，需补 [[Pinduoduo]] / [[BABA]] 验证扩展性）
+- **Next [[Catalyst]]**：
+    - 2026-05-19 [[Q1 2026 Earnings]] —— 核心营业利润 YoY 是关键（需 ≥ +5%）
+    - [[SAMR]] 调查结果披露（罚款金额 / 整改要求）
+    - 国际 OTA Bookings 增速能否维持 ≥ +40%
 
 ## [2026-04-26] setup | 目录重构为 [[LLM Wiki Standard]] 格式
 - **What**：将 vault 目录结构重组为 [[Karpathy]] 三层 + [[nashsu/llm_wiki]] 子目录的标准布局
@@ -170,12 +241,16 @@ aliases:
 
 > 这部分会在执行后转为正式 log 条目，然后从 backlog 移除。
 
-- [ ] `ingest | TCOM | 携程 2025 全年财报`（已研究但未生成最终页面）
-- [ ] `setup | overview.md`（[[Karpathy]] 模式中的全局摘要文件）
-- [ ] `setup | wiki/concepts/ROE.md` + `wiki/concepts/ROIC.md` + `wiki/concepts/Owner Earnings.md`（核心红链）
+- [x] ~~`ingest | TCOM | 携程 2025 全年财报`~~ ✅ 2026-04-26 完成
+- [x] ~~`setup | overview.md`~~ ✅ 2026-04-26 完成
+- [ ] `setup | wiki/concepts/ROIC.md` + `wiki/concepts/Owner Earnings.md` + `wiki/concepts/Wide Moat.md`（核心红链 · 在 [[META]] 与 [[TCOM]] 中均高频出现）
+- [ ] `setup | wiki/concepts/SAMR Anti-Monopoly Investigation.md`（[[TCOM]] 分析中关键风险，独立成页便于跨公司复用）
+- [ ] `setup | wiki/concepts/VIE Structure.md`（中概股共性结构）
+- [ ] `synthesis | 全球 OTA 对比 - TCOM vs Booking vs Expedia`（[[TCOM]] 已 ingest，需 [[BKNG]] / [[EXPE]] 补全）
 - [ ] `synthesis | 数字广告三巨头对比 - META vs GOOGL vs AMZN`（需先 ingest GOOGL + AMZN）
 - [ ] `lint | 首次健康检查`（在 Companies 数 ≥ 5 后触发）
 - [ ] `setup | wiki/entities/people/Mark Zuckerberg.md`（META 分析中已大量引用，应建专页）
+- [ ] `setup | wiki/entities/people/James Liang.md`（[[TCOM]] 创始人 + 人口经济学家，独特视角）
 
 ---
 

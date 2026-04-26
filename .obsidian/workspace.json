@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "schema.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "schema"
-            }
-          },
-          {
-            "id": "2d92ea6b3b580ab6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "wiki/entities/companies/META.md",
                 "mode": "source",
                 "source": false
@@ -35,8 +21,7 @@
               "title": "META"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,13 +183,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "2d92ea6b3b580ab6",
+  "active": "b3b77db448d59c5a",
   "lastOpenFiles": [
+    "schema.md",
+    "10b5-1.md",
+    "wiki/entities/companies/META.md",
+    "wiki/concepts/应收应付比.md",
+    "wiki/concepts/流动比率.md",
+    "wiki/concepts/CapEx.md",
+    "wiki/concepts/Tangible Net Worth.md",
+    "wiki/concepts/Wide Moat.md",
+    "wiki/concepts/Owner Earnings.md",
+    "wiki/concepts/ROIC.md",
+    "templates/Company-Analysis-Template.md",
+    "templates/Company-Analysis-Playbook.md",
+    "templates",
+    "wiki/entities/companies/TCOM.md",
     "红链.md",
     "wiki/log.md",
-    "schema.md",
     "purpose.md",
-    "wiki/entities/companies/META.md",
     "README.md",
     "wiki/entities/META.md",
     "wiki/entities/people",
@@ -219,8 +216,6 @@
     "Templates/Company-Analysis-Template.md",
     "Templates",
     "cursor.",
-    "create a link.md",
-    "Welcome.md",
     "Clippings"
   ]
 }
