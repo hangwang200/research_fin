@@ -1,0 +1,11 @@
+# wiki/queries/
+
+LLM Chat 中的**优秀回答归档**。
+
+[[Karpathy]] 原文："good answers can be filed back into the wiki as new pages. A comparison you asked for, an analysis, a connection you discovered — these are valuable and shouldn't disappear into chat history."
+
+**命名约定**：`<short-title>.md`
+
+**页面类型**：`type: Query`（详见 [[schema.md]] §3.7）
+
+**作用**：让 [[探索性提问]] 也能复利累积，而非淹没在 chat history 中。

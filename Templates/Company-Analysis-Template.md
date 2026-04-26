@@ -17,7 +17,7 @@ aliases:
   - <English Name>
 ---
 
-> **使用说明**：本文件为 [[Templates/Company-Analysis-Playbook]] 的填空版。复制到 `Companies/<Ticker>.md` 后逐节填充。所有 `<...>` 占位符必须替换。
+> **使用说明**：本文件为 [[Templates/Company-Analysis-Playbook]] 的填空版。复制到 `wiki/entities/companies/<Ticker>.md` 后逐节填充。所有 `<...>` 占位符必须替换。
 
 # <公司名> ([[<TICKER>]])
 

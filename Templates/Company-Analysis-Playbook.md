@@ -198,14 +198,14 @@ aliases:
 ## 2. 复用方式
 
 ### 在 Obsidian 中新建公司笔记
-1. 复制 [[Templates/Company-Analysis-Template]] 到 `Companies/<Ticker>.md`
+1. 复制 [[Templates/Company-Analysis-Template]] 到 `wiki/entities/companies/<Ticker>.md`
 2. 填充 YAML 中的 `ticker`、`currency`、`fy_end`
 3. 按 Section 1 → 5 顺序填充，每节末尾写一段 **Mini Conclusion**
 4. 文件末尾用 [[Dataview]] 关联同行：
 
 ````dataview
 TABLE ticker, last_updated, file.tags
-FROM "Companies"
+FROM "wiki/entities/companies"
 WHERE contains(industry, this.industry)
 SORT last_updated DESC
 ````

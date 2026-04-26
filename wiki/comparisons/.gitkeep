@@ -1,0 +1,14 @@
+# wiki/comparisons/
+
+多家公司 / 多种方案的**并排对比**。
+
+与 [[wiki/synthesis/]] 的区别：comparisons 偏向**结构化表格**，synthesis 偏向**叙述性论证**。
+
+**命名约定**：`<X vs Y>.md` 或 `<维度名>.md`
+
+**页面类型**：`type: Comparison`（详见 [[schema.md]] §3.6）
+
+**示例**（待建）：
+- [[META vs GOOGL - 数字广告 ROIC 对比]]
+- [[TCOM vs Booking - 全球 OTA 商业模式]]
+- [[NVDA vs AMD vs MTIA - AI 算力供应链]]

@@ -1,0 +1,15 @@
+# wiki/sources/
+
+[[raw/sources/]] 中每篇原始资料的 **LLM 摘要页**。
+
+**区别**：
+- `raw/sources/` = 原始全文（不可变）
+- `wiki/sources/` = LLM 生成的结构化摘要 + 关键事实抽取 + 链接到相关 [[wiki/entities/]] / [[wiki/concepts/]]
+
+**命名约定**：`<source-slug>.md`（如 `meta-q4-2025-earnings.md`）
+
+**页面类型**：`type: Source-Summary`（详见 [[schema.md]] §3.4）
+
+**作用**：
+- 让 LLM 快速回顾某份源材料的关键信息
+- 在 [[Knowledge Graph]] 中作为 [[Bridge Node]] 连接 raw 和 wiki 层

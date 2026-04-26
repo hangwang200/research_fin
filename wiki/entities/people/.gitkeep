@@ -1,0 +1,14 @@
+# wiki/entities/people/
+
+存放人物页：创始人、CEO、投资大师、研究员等。
+
+**命名约定**：`<Full Name>.md`（中英文均可，但同一 Wiki 内保持一致）
+
+**页面类型**：`type: Person`（详见 [[schema.md]] §3.2）
+
+**示例**（待建）：
+- [[Mark Zuckerberg]]
+- [[Charlie Munger]]
+- [[Warren Buffett]]
+- [[Jensen Huang]]
+- [[梁建章]]

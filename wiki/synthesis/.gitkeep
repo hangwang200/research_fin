@@ -1,0 +1,16 @@
+# wiki/synthesis/
+
+跨多个 [[wiki/entities/]] / [[wiki/sources/]] 的**原创综合分析**。
+
+不属于任何单一公司或概念，但能从多源中萃取新洞见。
+
+**命名约定**：`<标题>.md`
+
+**页面类型**：`type: Synthesis`（详见 [[schema.md]] §3.5）
+
+**示例**（待建）：
+- [[2026 数字广告三巨头之争 - Google vs Meta vs Amazon]]
+- [[AI CapEx 黑洞 - 谁在赚 GPU 周期的钱]]
+- [[中概股回归 - 港股 vs A 股双重上市浪潮]]
+
+**触发条件**：当 ≥ 3 家可对比公司完成分析后，[[Synthesis]] 的 ROI 最高。
